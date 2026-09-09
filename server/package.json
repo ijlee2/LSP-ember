@@ -1,0 +1,10 @@
+{
+  "name": "sublime-glint",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@glint/ember-tsc": "^1.11.4",
+    "@glint/tsserver-plugin": "^2.7.7",
+    "typescript": "^6.0.3"
+  }
+}

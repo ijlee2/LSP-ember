@@ -1,0 +1,8 @@
+[
+  {
+    "languages": ["glimmer-js", "glimmer-ts"],
+    "location": "${storage_path}/LSP-ember/server/node_modules/",
+    "name": "@glint/tsserver-plugin",
+    "selector": "source.template-tag"
+  }
+]

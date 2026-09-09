@@ -1,0 +1,57 @@
+{
+  "contributions": {
+    "settings": [
+      {
+        "file_patterns": ["/LSP-ember.sublime-settings"],
+        "schema": {
+          "$id": "sublime://settings/LSP-ember",
+          "allOf": [
+            {
+              "$ref": "sublime://settings/LSP-plugin-base"
+            },
+            {
+              "$ref": "sublime://settings/LSP-ember#/definitions/PluginConfig"
+            }
+          ],
+          "definitions": {
+            "PluginConfig": {
+              "properties": {
+                "server_path": {
+                  "default": "auto",
+                  "markdownDescription": "The path to the server binary to use for starting the language server. Use `auto` for the package to manage (install/update) server automatically.\n\n> [!NOTE]\n> Change this instead of directly updating `command` - the `${server_path}` variable is dynamically resolved based on this setting.\n\n> [!WARNING]\n> Using custom binary could result in package settings not matching what server supports.",
+                  "type": "string"
+                },
+                "initialization_options": {
+                  "additionalProperties": false,
+                  "properties": {}
+                },
+                "settings": {
+                  "additionalProperties": false,
+                  "properties": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "file_patterns": ["/*.sublime-project"],
+        "schema": {
+          "properties": {
+            "settings": {
+              "properties": {
+                "LSP": {
+                  "properties": {
+                    "LSP-ember": {
+                      "$ref": "sublime://settings/LSP-ember#/definitions/PluginConfig"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

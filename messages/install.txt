@@ -1,0 +1,12 @@
+LSP-ember
+================
+
+Thanks for installing LSP-ember, which provides LSP for `*.gjs` and `*.gts` files (`<template>` tag).
+
+Three other packages are required. Install them with Package Control, then restart Sublime Text:
+
+  - LSP
+  - LSP-typescript
+  - Template Tag
+
+To configure the package, run "Preferences: LSP-ember Settings" from the Command Palette.
