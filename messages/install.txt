@@ -1,0 +1,18 @@
+LSP-ember
+================
+
+Thanks for installing LSP-ember, which provides Glint-powered language
+features for `*.gjs` and `*.gts` files (the <template> tag format).
+
+Three other packages are required. Install them with Package Control, then
+restart Sublime Text:
+
+  - LSP
+  - LSP-typescript
+  - Template Tag
+
+The language server is installed for you on first use, so opening a `*.gts`
+file may take a moment the first time.
+
+To configure the package, run "Preferences: LSP-ember Settings" from the
+Command Palette.
