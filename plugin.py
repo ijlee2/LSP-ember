@@ -11,9 +11,9 @@ from lsp_utils import NodeManager
 from pathlib import Path
 from sublime_lib import ResourcePath
 from typing import Any
-from typing import Dict
+from typing import Dict # Deprecated in 3.9
 from typing import final
-from typing import Tuple
+from typing import Tuple # Deprecated in 3.9
 from typing_extensions import override
 
 # `glint-language-server` asks its client to run commands against tsserver, so that Glint and
@@ -45,7 +45,7 @@ class LspTemplateTagPlugin(LspPlugin):
             cls.plugin_storage_path,
             ResourcePath('Packages', package_name, 'server'),
             Path('node_modules', '@glint', 'ember-tsc', 'bin', 'glint-language-server.js'),
-            node_version_requirement='>=20',
+            node_version_requirement='>=22',
         )
 
     @notification_handler('tsserver/request')

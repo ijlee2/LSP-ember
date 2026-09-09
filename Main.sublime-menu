@@ -1,28 +1,28 @@
 [
   {
-    "id": "preferences",
     "children": [
       {
         "caption": "Package Settings",
-        "mnemonic": "P",
-        "id": "package-settings",
         "children": [
           {
             "caption": "LSP",
-            "id": "lsp-settings",
             "children": [
               {
-                "caption": "LSP-ember",
-                "command": "edit_settings",
                 "args": {
                   "base_file": "${packages}/LSP-ember/LSP-ember.sublime-settings",
                   "default": "// Settings in here override those in \"LSP-ember/LSP-ember.sublime-settings\"\n\n{\n\t$0\n}\n",
                 },
+                "caption": "LSP-ember",
+                "command": "edit_settings",
               },
             ],
+            "id": "lsp-settings",
           },
         ],
+        "id": "package-settings",
+        "mnemonic": "P",
       },
     ],
+    "id": "preferences",
   },
 ]
