@@ -1,0 +1,12 @@
+# compiled output
+/dist/
+/tmp/
+ 
+# misc
+!.*
+.*/
+CONTRIBUTING.md
+README.md
+pnpm-lock.yaml
+
+# specific to this package

@@ -1,0 +1,35 @@
+{
+  "name": "LSP-ember",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Provides LSP for <template> tags for Sublime Text",
+  "keywords": [
+    "emberjs",
+    "sublime text",
+    "LSP",
+    "template tag"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ijlee2/LSP-ember.git"
+  },
+  "license": "MIT",
+  "author": "Isaac J. Lee",
+  "type": "module",
+  "scripts": {
+    "lint": "prettier . --cache --check",
+    "lint:fix": "prettier . --cache --write",
+    "release:prepare": "changeset version",
+    "release:publish": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.2",
+    "@ijlee2-frontend-configs/changesets": "^3.0.2",
+    "@ijlee2-frontend-configs/prettier": "^3.3.4",
+    "prettier": "^3.9.6"
+  },
+  "packageManager": "pnpm@11.26.0",
+  "engines": {
+    "node": "22.* || >= 24"
+  }
+}

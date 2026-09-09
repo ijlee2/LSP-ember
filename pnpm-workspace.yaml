@@ -1,0 +1,6 @@
+autoInstallPeers: false
+
+minimumReleaseAgeExclude:
+  - "@ijlee2-frontend-configs/*"
+
+resolvePeersFromWorkspaceRoot: false
