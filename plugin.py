@@ -18,9 +18,17 @@ from typing_extensions import override
 
 # `glint-language-server` asks its client to run commands against tsserver, so that Glint and
 # TypeScript agree on which `tsconfig.json` governs a file, and so that Glint can read component
-# metadata that only `@glint/tsserver-plugin` knows about. The notification payload is
-# `[seq, command_name, command_args]`, and the reply is sent back as `[seq, body]`.
-TsserverRequestParams = Tuple[int, str, Dict[str, Any]]
+# metadata that only `@glint/tsserver-plugin` knows about.
+#
+# The server calls `sendNotification('tsserver/request', [seq, command_name, command_args])`. Given a
+# single argument that is a list, vscode-jsonrpc wraps it in another list, so the notification arrives
+# with `params` of `[[seq, command_name, command_args]]` - one positional argument, not three.
+#
+# The reply has to be nested the same way. The server's handler is `([id, res]) => ...`, and
+# vscode-jsonrpc spreads positional params across the handler's arguments, so `[seq, body]` would
+# call it as `handler(seq, body)` and the destructuring would fail on `seq`.
+TsserverRequest = Tuple[int, str, Dict[str, Any]]
+TsserverRequestParams = Tuple[TsserverRequest]
 
 TYPESCRIPT_PLUGIN_NAME = 'LSP-typescript'
 
@@ -56,7 +64,7 @@ class LspTemplateTagPlugin(LspPlugin):
         manager = session.manager()
         if not manager:
             return
-        seq, command_name, command_args = params
+        seq, command_name, command_args = params[0]
         typescript_session = manager.get_session(TYPESCRIPT_PLUGIN_NAME, command_args['file'])
         if not typescript_session:
             print(
@@ -80,4 +88,4 @@ class LspTemplateTagPlugin(LspPlugin):
     def _on_execute_command_response(self, seq: int, result: LSPAny | Error) -> None:
         if session := self.weaksession():
             body = result['body'] if isinstance(result, dict) and 'body' in result else None
-            session.send_notification(Notification('tsserver/response', [seq, body]))
+            session.send_notification(Notification('tsserver/response', [[seq, body]]))
