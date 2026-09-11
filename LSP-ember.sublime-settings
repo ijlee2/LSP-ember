@@ -5,6 +5,6 @@
   // NOTE: Change this instead of directly updating `command` - the `${server_path}` variable is dynamically resolved based on this setting.
   // WARNING: Override at your own risk - using a custom binary can cause compatibility issues with server settings.
   "server_path": "auto",
-  "selector": "source.template-tag.js | source.template-tag.ts",
+  "selector": "source.template-tag",
   "settings": {},
 }

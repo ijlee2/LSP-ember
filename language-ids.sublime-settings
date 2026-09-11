@@ -1,10 +1,6 @@
+// @glint/ember-tsc creates virtual code if the language ID is one of the following:
+// `'glimmer-js'`, `'glimmer-ts'`, `'javascript.glimmer'`, and `'typescript.glimmer'`.
 {
-  // Glint's Volar language plugin only builds virtual code when the language ID is one of
-  // `glimmer-js`, `glimmer-ts`, `javascript.glimmer`, or `typescript.glimmer`. Without a mapping
-  // here, LSP derives the ID from the second component of the base scope, sending `template-tag`,
-  // and Glint produces no virtual code (so no hover, completion, or diagnostics).
-  //
-  // These scopes require the `Template Tag` syntax to distinguish `*.gjs` from `*.gts`.
-  "source.template-tag.js": "glimmer-js",
-  "source.template-tag.ts": "glimmer-ts",
+  "source.template-tag": "glimmer-js",
+  "source.template-tag": "glimmer-ts",
 }
