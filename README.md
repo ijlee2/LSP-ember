@@ -11,17 +11,28 @@ _Provides LSP (Language Server Protocol) for Ember in Sublime Text_
 
 ## Installation
 
-Install these packages via [Sublime Text Package Control](https://packagecontrol.io), then restart Sublime Text.
+Install these 5 packages via [Package Control](https://packagecontrol.io), then restart Sublime Text.
 
-- [GJS](https://packagecontrol.io/packages/GJS) (provides syntax highlighting)
-- [GTS](https://packagecontrol.io/packages/GTS) (provides syntax highlighting)
-- [LSP](https://packagecontrol.io/packages/LSP)
-- [LSP-ember](https://packagecontrol.io/packages/LSP-ember)
-- [LSP-typescript](https://packagecontrol.io/packages/LSP-typescript)
+- LSP
+- LSP-ember
+- LSP-typescript
+- Handlebars, [Template Tag](https://github.com/ijlee2/sublime-syntax-definition-template-tag) (provides syntax highlighting)
+
+<details>
+
+<summary>How to Install</summary>
+
+1. Open Sublime Text.
+1. Open Package Control by pressing <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows). Alternatively, in the menu bar, click on `Sublime Text` > `Settings` > `Package Control`.
+1. Type `install` in the search bar so that you can find and select `Package Control: Install Package`.
+1. Search for `LSP`, then select to install. Repeat steps 2-3 for the remaining packages.
+1. Restart Sublime Text.
+
+</details>
 
 > [!NOTE]
 >
-> `LSP-typescript` is a required dependency, not an optional one. Glint v2 is required.
+> `LSP-typescript` is a required dependency, not an optional one. Glint v1 is not supported.
 
 
 ## Configuration
