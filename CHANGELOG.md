@@ -1,5 +1,11 @@
 # LSP-ember
 
+## 0.2.0
+
+### Minor Changes
+
+- [#5](https://github.com/ijlee2/LSP-ember/pull/5) Assumed a single syntax definition for gjs and gts files ([@ijlee2](https://github.com/ijlee2))
+
 ## 0.1.0
 
 ### Minor Changes
