@@ -1,5 +1,15 @@
 # LSP-ember
 
+## 0.5.0
+
+### Minor Changes
+
+- [#11](https://github.com/ijlee2/LSP-ember/pull/11) Removed language-ids.sublime-settings ([@ijlee2](https://github.com/ijlee2))
+
+### Patch Changes
+
+- [#10](https://github.com/ijlee2/LSP-ember/pull/10) Added pyright/ruff linter ([@rchl](https://github.com/rchl))
+
 ## 0.4.0
 
 ### Minor Changes
