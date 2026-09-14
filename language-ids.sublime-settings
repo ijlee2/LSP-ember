@@ -1,6 +1,9 @@
+// TODO: `language-ids.sublime-settings` file is no longer supported. Add the language
+// IDs to an upstream repo for Sublime.
+//
 // @glint/ember-tsc creates virtual code if the language ID is one of the following:
 // `'glimmer-js'`, `'glimmer-ts'`, `'javascript.glimmer'`, and `'typescript.glimmer'`.
 {
-  "source.template-tag": "glimmer-js",
-  "source.template-tag": "glimmer-ts",
+  "source.gjs": "glimmer-js",
+  "source.gts": "glimmer-ts",
 }
