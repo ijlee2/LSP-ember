@@ -17,7 +17,7 @@ Install these 5 packages via [Package Control](https://packagecontrol.io), then 
 - LSP
 - LSP-ember
 - LSP-typescript
-- Template Tag
+- [Template Tag](https://github.com/ijlee2/sublime-syntax-definition-template-tag)
 
 <details>
 
