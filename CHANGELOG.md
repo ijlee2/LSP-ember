@@ -1,5 +1,11 @@
 # LSP-ember
 
+## 0.3.0
+
+### Minor Changes
+
+- [#6](https://github.com/ijlee2/LSP-ember/pull/6) Renamed Template Tag to Glimmer TS. Created Glimmer JS. ([@ijlee2](https://github.com/ijlee2))
+
 ## 0.2.0
 
 ### Minor Changes
