@@ -11,9 +11,9 @@ from lsp_utils import NodeManager
 from pathlib import Path
 from sublime_lib import ResourcePath
 from typing import Any
-from typing import Dict # Deprecated in 3.9
+from typing import Dict  # Deprecated in 3.9
 from typing import final
-from typing import Tuple # Deprecated in 3.9
+from typing import Tuple  # Deprecated in 3.9
 from typing_extensions import override
 
 # `glint-language-server` asks its client to run commands against tsserver, so that Glint and
