@@ -33,6 +33,12 @@ Install these 5 packages via [Package Control](https://packagecontrol.io), then 
 
 > [!NOTE]
 >
+> Should [LSP-ember](https://packagecontrol.io/packages/LSP-ember) be unavailable, you can use `Package Control: Add Repository` instead.
+>
+> Type `https://raw.githubusercontent.com/ijlee2/LSP-ember/main/repository.json` to download code, then use `Package Control: Install Package` to install LSP-ember.
+
+> [!NOTE]
+>
 > Glint v1 is not supported.
 
 

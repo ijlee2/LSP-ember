@@ -1,0 +1,18 @@
+{
+  "$schema": "sublime://packagecontrol.io/schemas/repository",
+  "schema_version": "4.0.0",
+  "packages": [
+    {
+      "name": "LSP-ember",
+      "details": "https://github.com/ijlee2/LSP-ember",
+      "description": "Provides LSP (Language Server Protocol) for Ember in Sublime Text",
+      "labels": ["lsp", "ember"],
+      "releases": [
+        {
+          "sublime_text": "*",
+          "tags": true
+        }
+      ]
+    }
+  ]
+}
