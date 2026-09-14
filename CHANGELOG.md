@@ -1,5 +1,11 @@
 # LSP-ember
 
+## 0.4.0
+
+### Minor Changes
+
+- [#8](https://github.com/ijlee2/LSP-ember/pull/8) Created repository.json to provide an alternative for installation ([@ijlee2](https://github.com/ijlee2))
+
 ## 0.3.1
 
 ### Patch Changes
