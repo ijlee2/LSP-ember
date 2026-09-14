@@ -1,5 +1,11 @@
 # LSP-ember
 
+## 0.3.1
+
+### Patch Changes
+
+- [#7](https://github.com/ijlee2/LSP-ember/pull/7) Updated README ([@ijlee2](https://github.com/ijlee2))
+
 ## 0.3.0
 
 ### Minor Changes
