@@ -9,17 +9,17 @@ importers:
   .:
     devDependencies:
       '@changesets/cli':
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^3.0.3
+        version: 3.0.3
       '@ijlee2-frontend-configs/changesets':
         specifier: ^3.0.2
-        version: 3.0.2(@changesets/cli@3.0.2)
+        version: 3.0.2(@changesets/cli@3.0.3)
       '@ijlee2-frontend-configs/prettier':
-        specifier: ^3.3.4
-        version: 3.3.4(prettier@3.9.6)
+        specifier: ^3.4.0
+        version: 3.4.0(prettier@3.9.8)
       prettier:
-        specifier: ^3.9.6
-        version: 3.9.6
+        specifier: ^3.9.8
+        version: 3.9.8
 
 packages:
 
@@ -43,8 +43,8 @@ packages:
     resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/parser@7.29.8':
-    resolution: {integrity: sha512-E8lTAYNB1KW+FH+VGJuZM1ioAx2E6oVlvQFRrf5P8ZZmsiJXYAD9vTFV7yyEURNzgh1dFqMZuO6tUwcARbqFCA==}
+  '@babel/parser@7.29.9':
+    resolution: {integrity: sha512-CjXrNHTnvqBVqHgdBysY3vk2T8tpJHb5/RMeHJBTyVa9xgugCB0CJTx/3oO8RV2QRQP391RWpB7D6hLjm8V9uA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -60,8 +60,8 @@ packages:
     resolution: {integrity: sha512-Vj1jF3cPfxg7OAfoI7QnVKLoILlm2JF9pnVHrX8qx7AHMiYWT+NDAA7jChlNgRS4WTLc/fD1lXLmPixluj+3Gg==}
     engines: {node: '>=6.9.0'}
 
-  '@changesets/apply-release-plan@8.1.0':
-    resolution: {integrity: sha512-M93HOGyX3ssg6He3b5NotaHtQVu6uajHS6UIQ28xKt2RzskCy73ayX4I914qBKjTJmrE4YFlELQjfcqxbmGLJw==}
+  '@changesets/apply-release-plan@8.1.1':
+    resolution: {integrity: sha512-nk2Hbq3M9NeHMdaIRBDvawKrQJzXB9sGyBUE5yWnIKtvdcNCPj75zBekJYr0gTT2ecJH3eFeTrc8eisPImcv0Q==}
     engines: {node: ^22.11 || ^24 || >=26}
 
   '@changesets/assemble-release-plan@7.0.0':
@@ -72,13 +72,13 @@ packages:
     resolution: {integrity: sha512-3Dst2Ime2Op5nd4XmWJLPIgp11ZFqJqSkVug9izK6TDcIV4YlhPS4ECbEVR+eGI0bk0r1ItogD4j2Oli87bJrA==}
     engines: {node: ^22.11 || ^24 || >=26}
 
-  '@changesets/cli@3.0.2':
-    resolution: {integrity: sha512-t/omGJj/I+Jv0kmJAkj5cstYEdUQiJnpip2F+2m3F4lQ3kAZ3o8Exep4/Fm1qq4rvw6ovlhJvZNrKdwLJ4lkuQ==}
+  '@changesets/cli@3.0.3':
+    resolution: {integrity: sha512-L1i67bMfkK6iC/kDejuNO4pFgTRcWIObsD6Qof2woP1I4M8tj17DGlcpRaTzTv1DYSP5EMwWdEtR8X0Pj5Jg3Q==}
     engines: {node: ^22.11 || ^24 || >=26, npm: '>=10.9.0', pnpm: '>=10.0.0', yarn: '>=4.5.2'}
     hasBin: true
 
-  '@changesets/config@4.0.0':
-    resolution: {integrity: sha512-mw95/YrkOuhZZxfnVAA4bSXOFUi+KlhzOBTM8C4x777NhUU6HWIl9Z+K+nME+E4PVsv5NQVQwTfiHihAS1A/ow==}
+  '@changesets/config@4.0.1':
+    resolution: {integrity: sha512-PxpxSQLQSLDjceAgRq+4FWlU+HflDIw03mmPVipxoQx9xrXFUjmqTy3SE+n/2t+DqPdpPiLWVr5NRiLZvjyLwg==}
     engines: {node: ^22.11 || ^24 || >=26}
 
   '@changesets/errors@1.0.0':
@@ -125,12 +125,12 @@ packages:
     resolution: {integrity: sha512-q/ThtP9gcnEP6xlv7LrY26C2mHqdGBti/MmOVngt/M/oIGYkssmQGxPK9WzBNt2juVcH/vml2WQ+ra8LXYOTaA==}
     engines: {node: ^22.11 || ^24 || >=26}
 
-  '@clack/core@1.5.0':
-    resolution: {integrity: sha512-zNikCcd8BbcEvzzG1sbXFrRHFk5kHPrpwZwksPvf9qyQO1Teb7JaXaOAxXZei9nZLDW0gaZawiuTCji88bTBhw==}
+  '@clack/core@1.5.1':
+    resolution: {integrity: sha512-iHTrHA8MtVuLl2TfZySmcKv1qO2PoyC9Z7pfSDozEuV5vtY3/wcOPKJXlqJ5Oq2Cx5DDGQGAMVx6HZfRRoVEbQ==}
     engines: {node: '>= 20.12.0'}
 
-  '@clack/prompts@1.8.0':
-    resolution: {integrity: sha512-PXzLZ8N34rxmuo4dJg3xtOXhcBse94qGjDqsteoEYrFrrZ5FSjIGwMAuOcv64ln8rHVBBD06XeVGr+/JX+plcA==}
+  '@clack/prompts@1.8.1':
+    resolution: {integrity: sha512-dlT1m5e/0yUL0kRNcQn7yGLVThkgbB0Ga/1AmfDDC/8ik6AIiSf2QLQO2zPYvefsHP0aFgxO93cVLCCfDp7kzQ==}
     engines: {node: '>= 20.12.0'}
 
   '@ijlee2-frontend-configs/changesets@3.0.2':
@@ -139,11 +139,11 @@ packages:
     peerDependencies:
       '@changesets/cli': ^3.0.0
 
-  '@ijlee2-frontend-configs/prettier@3.3.4':
-    resolution: {integrity: sha512-od99RZxp/VUECncJZxEInG/tvCy1yG+WP0OGtbNE6iG5CPJO8oFKzthtER69klLi0cmaTcpMR2Wwc+erspzrbw==}
+  '@ijlee2-frontend-configs/prettier@3.4.0':
+    resolution: {integrity: sha512-8RHr++vdyjQUOvXWGQiRrNb0sCcg5ojG0CmiKwi8NSImT9kaSZ46D6vLOvY4vNlLBvKcl1VhD00gHr5cSn3Jig==}
     engines: {node: 22.* || >= 24}
     peerDependencies:
-      prettier: ^3.9.6
+      prettier: ^3.9.8
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -260,8 +260,8 @@ packages:
     peerDependencies:
       prettier: '>= 3.0.0'
 
-  prettier@3.9.6:
-    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
+  prettier@3.9.8:
+    resolution: {integrity: sha512-WRFq3Wn3WId7LLROfMLdH7xaFr2jR62wU8nLO6rQUOLOxNZUviyJQs1M0iIhLexSFy+L+w0ch66wtoO2jRjG0A==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -285,8 +285,8 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
-  yaml@2.9.0:
-    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -300,7 +300,7 @@ snapshots:
 
   '@babel/generator@7.29.8':
     dependencies:
-      '@babel/parser': 7.29.8
+      '@babel/parser': 7.29.9
       '@babel/types': 7.29.8
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
@@ -312,14 +312,14 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.29.7': {}
 
-  '@babel/parser@7.29.8':
+  '@babel/parser@7.29.9':
     dependencies:
       '@babel/types': 7.29.8
 
   '@babel/template@7.29.7':
     dependencies:
       '@babel/code-frame': 7.29.7
-      '@babel/parser': 7.29.8
+      '@babel/parser': 7.29.9
       '@babel/types': 7.29.8
 
   '@babel/traverse@7.29.8':
@@ -327,7 +327,7 @@ snapshots:
       '@babel/code-frame': 7.29.7
       '@babel/generator': 7.29.8
       '@babel/helper-globals': 7.29.7
-      '@babel/parser': 7.29.8
+      '@babel/parser': 7.29.9
       '@babel/template': 7.29.7
       '@babel/types': 7.29.8
       debug: 4.4.3
@@ -339,9 +339,9 @@ snapshots:
       '@babel/helper-string-parser': 7.29.7
       '@babel/helper-validator-identifier': 7.29.7
 
-  '@changesets/apply-release-plan@8.1.0':
+  '@changesets/apply-release-plan@8.1.1':
     dependencies:
-      '@changesets/config': 4.0.0
+      '@changesets/config': 4.0.1
       '@changesets/format': 0.1.2
       '@changesets/git': 4.0.1
       '@changesets/should-skip-package': 1.0.0
@@ -362,12 +362,12 @@ snapshots:
     dependencies:
       '@changesets/types': 7.0.0
 
-  '@changesets/cli@3.0.2':
+  '@changesets/cli@3.0.3':
     dependencies:
-      '@changesets/apply-release-plan': 8.1.0
+      '@changesets/apply-release-plan': 8.1.1
       '@changesets/assemble-release-plan': 7.0.0
       '@changesets/changelog-git': 1.0.0
-      '@changesets/config': 4.0.0
+      '@changesets/config': 4.0.1
       '@changesets/errors': 1.0.0
       '@changesets/get-dependents-graph': 3.0.0
       '@changesets/git': 4.0.1
@@ -376,7 +376,7 @@ snapshots:
       '@changesets/should-skip-package': 1.0.0
       '@changesets/types': 7.0.0
       '@changesets/write': 1.0.1
-      '@clack/prompts': 1.8.0
+      '@clack/prompts': 1.8.1
       '@manypkg/get-packages': 3.1.0
       '@pnpm/deps.graph-sequencer': 1100.0.1
       cac: 7.0.0
@@ -386,7 +386,7 @@ snapshots:
       semver: 7.8.5
       tinyexec: 1.3.1
 
-  '@changesets/config@4.0.0':
+  '@changesets/config@4.0.1':
     dependencies:
       '@changesets/get-dependents-graph': 3.0.0
       '@changesets/should-skip-package': 1.0.0
@@ -421,7 +421,7 @@ snapshots:
   '@changesets/parse@1.0.0':
     dependencies:
       '@changesets/types': 7.0.0
-      yaml: 2.9.0
+      yaml: 2.9.1
 
   '@changesets/pre@3.0.0':
     dependencies:
@@ -447,28 +447,28 @@ snapshots:
       '@changesets/types': 7.0.0
       human-id: 4.2.1
 
-  '@clack/core@1.5.0':
+  '@clack/core@1.5.1':
     dependencies:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@clack/prompts@1.8.0':
+  '@clack/prompts@1.8.1':
     dependencies:
-      '@clack/core': 1.5.0
+      '@clack/core': 1.5.1
       fast-string-width: 3.0.2
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@ijlee2-frontend-configs/changesets@3.0.2(@changesets/cli@3.0.2)':
+  '@ijlee2-frontend-configs/changesets@3.0.2(@changesets/cli@3.0.3)':
     dependencies:
-      '@changesets/cli': 3.0.2
+      '@changesets/cli': 3.0.3
       '@changesets/get-github-info': 1.0.1
 
-  '@ijlee2-frontend-configs/prettier@3.3.4(prettier@3.9.6)':
+  '@ijlee2-frontend-configs/prettier@3.4.0(prettier@3.9.8)':
     dependencies:
-      prettier: 3.9.6
-      prettier-plugin-ember-hbs-tag: 2.0.3(prettier@3.9.6)
-      prettier-plugin-ember-template-tag: 2.1.8(prettier@3.9.6)
+      prettier: 3.9.8
+      prettier-plugin-ember-hbs-tag: 2.0.3(prettier@3.9.8)
+      prettier-plugin-ember-template-tag: 2.1.8(prettier@3.9.8)
     transitivePeerDependencies:
       - supports-color
 
@@ -499,7 +499,7 @@ snapshots:
     dependencies:
       jju: 1.4.0
       tinyglobby: 0.2.17
-      yaml: 2.9.0
+      yaml: 2.9.1
 
   '@pnpm/deps.graph-sequencer@1100.0.1': {}
 
@@ -552,19 +552,19 @@ snapshots:
 
   picomatch@4.0.7: {}
 
-  prettier-plugin-ember-hbs-tag@2.0.3(prettier@3.9.6):
+  prettier-plugin-ember-hbs-tag@2.0.3(prettier@3.9.8):
     dependencies:
-      prettier: 3.9.6
+      prettier: 3.9.8
 
-  prettier-plugin-ember-template-tag@2.1.8(prettier@3.9.6):
+  prettier-plugin-ember-template-tag@2.1.8(prettier@3.9.8):
     dependencies:
       '@babel/traverse': 7.29.8
       content-tag: 4.2.0
-      prettier: 3.9.6
+      prettier: 3.9.8
     transitivePeerDependencies:
       - supports-color
 
-  prettier@3.9.6: {}
+  prettier@3.9.8: {}
 
   semver@7.8.5: {}
 
@@ -579,4 +579,4 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
 
-  yaml@2.9.0: {}
+  yaml@2.9.1: {}
