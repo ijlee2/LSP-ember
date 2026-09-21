@@ -102,10 +102,6 @@ Here are some guidelines to help you and everyone else.
 
 1. [Create a tag](https://github.com/ijlee2/LSP-ember/releases/new) and provide release notes. The tag name should match the package version (e.g. `0.1.2`).
 
-1. Publish the package.
-
-    ```sh
-    pnpm release:publish --otp <YOUR_ONE_TIME_PASSWORD>
-    ```
+1. The latest version will appear on [Package Control](https://packagecontrol.io/packages/LSP-ember).
 
 </details>
