@@ -19,8 +19,7 @@
   "scripts": {
     "lint": "prettier . --cache --check",
     "lint:fix": "prettier . --cache --write",
-    "release:prepare": "changeset version",
-    "release:publish": "changeset publish"
+    "release:prepare": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.3",
