@@ -1,5 +1,11 @@
 # LSP-ember
 
+## 0.6.0
+
+### Minor Changes
+
+- [#15](https://github.com/ijlee2/LSP-ember/pull/15) Updated glint dependencies ([@ijlee2](https://github.com/ijlee2))
+
 ## 0.5.0
 
 ### Minor Changes
