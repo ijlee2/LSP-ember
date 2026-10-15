@@ -1,5 +1,11 @@
 # LSP-ember
 
+## 0.6.1
+
+### Patch Changes
+
+- [#13](https://github.com/ijlee2/LSP-ember/pull/13) Move LSP-ember preferences into intended sub-menu ([@rchl](https://github.com/rchl))
+
 ## 0.6.0
 
 ### Minor Changes
