@@ -1,4 +1,9 @@
+autoDedupe: true
+
 autoInstallPeers: false
+
+lockfile:
+  includeResolutionSettings: true
 
 minimumReleaseAgeExclude:
   - "@ijlee2-frontend-configs/*"
