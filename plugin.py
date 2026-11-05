@@ -11,10 +11,12 @@ from lsp_utils import NodeManager
 from pathlib import Path
 from sublime_lib import ResourcePath
 from typing import Any
+from typing import cast
 from typing import Dict  # Deprecated in 3.9
 from typing import final
 from typing import Tuple  # Deprecated in 3.9
 from typing_extensions import override
+import sublime
 
 # `glint-language-server` asks its client to run commands against tsserver, so that Glint and
 # TypeScript agree on which `tsconfig.json` governs a file, and so that Glint can read component
@@ -31,6 +33,21 @@ TsserverRequest = Tuple[int, str, Dict[str, Any]]
 TsserverRequestParams = Tuple[TsserverRequest]
 
 TYPESCRIPT_PLUGIN_NAME = 'LSP-typescript'
+TSSERVER_PLUGIN_NAME = '@glint/tsserver-plugin'
+
+
+def log(message: str) -> None:
+    print(f'[{__package__}] {message}')
+
+
+def find_node_modules_with(path: Path, package_name: str) -> Path | None:
+    """Return the `node_modules` directory that Node.js would load `package_name` from, for a module at `path`."""
+    path = path.resolve()
+    for directory in path.parents:
+        node_modules = directory / 'node_modules'
+        if (node_modules / package_name / 'package.json').is_file():
+            return node_modules
+    return None
 
 
 def plugin_loaded():
@@ -55,6 +72,23 @@ class LspTemplateTagPlugin(LspPlugin):
             Path('node_modules', '@glint', 'ember-tsc', 'bin', 'glint-language-server.js'),
             node_version_requirement='>=22',
         )
+        cls._register_tsserver_plugin(context)
+
+    @classmethod
+    def _register_tsserver_plugin(cls, context: OnPreStartContext) -> None:
+        # Load the plugin installed with the server, which can be a custom one set with `server_path`.
+        if not (window := context.view.window()):
+            return
+        server_path = cast('str', sublime.expand_variables(context.variables['server_path'], context.variables))
+        if not (location := find_node_modules_with(Path(server_path), TSSERVER_PLUGIN_NAME)):
+            log(f'No "{TSSERVER_PLUGIN_NAME}" for the server at "{server_path}". Glint types won\'t work.')
+            return
+        window.run_command('lsp_typescript_register_plugin', {
+            'name': TSSERVER_PLUGIN_NAME,
+            'location': str(location),
+            'languages': ['glimmer-js', 'glimmer-ts'],
+            'selector': 'source.gjs | source.gts',
+        })
 
     @notification_handler('tsserver/request')
     def on_tsserver_request(self, params: TsserverRequestParams) -> None:
@@ -69,7 +103,7 @@ class LspTemplateTagPlugin(LspPlugin):
         if not typescript_session:
             print(
                 f'[LSP-ember] {TYPESCRIPT_PLUGIN_NAME} not found, or it has not loaded '
-                '@glint/tsserver-plugin. Try restarting Sublime Text.'
+                f'{TSSERVER_PLUGIN_NAME}. Try restarting Sublime Text.'
             )
             self._on_execute_command_response(seq, {'body': None})
             return
